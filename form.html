@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <title>Table Form</title>
+    </head>
+    <body>
+        <h1>Kayıt Oluşturma Deneme Form</h1> <br>
+        <h2>Form Type 1</h2>
+        <form name="kayit" action="kayit.php" method="get" >
+            <label for="username">Ad Soyad:</label> <br>
+            <input type="text" name="adsoyad" id="username" maxlength="15" required> <br>
+            <label for="password">Şifre:</label> <br>
+            <input type="password" name="sifre" id="password" maxlength="15" required> <br>
+            <label for="email">E-Posta:</label> <br>
+            <input type="email" name="email" required> <br> <br>
+            <input type="submit">
+        </form>
+        <br><br>
+        <h2>Form Type 2</h2>
+        <form name="kayit" action="" method="get">
+            <table>
+                <tr><td>Ad Soyad:</td><td><input type="text" name="adsoyad"></td></tr>
+                <tr><td>Şifre:</td><td><input type="password" name="sifre"></td></tr>
+                <tr><td>E mail:</td><td><input type="email" name="email"></td></tr>
+                <tr><td></td><td><input type="submit"><input type="reset"></td></tr>
+            </table>
+        </form>
+    </body>
+</html>
